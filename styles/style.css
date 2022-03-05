@@ -1,0 +1,462 @@
+:root{
+  --background: #fff;
+  --button-color: #2bd0d0;
+  --text-color-grey: #9e9aa8;
+  --h1-color: #34313d;
+  --main-background: #f2f2f2;
+  --finish-color: #232127;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #f2f2f2;
+  font-family: "Poppins" , "Arial" , sans-serif;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* OUTLINE STYLES*/
+*:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* CONTAINER */
+.container{
+  max-width: 1010px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SITENAV */
+.sitenav{
+  width: 1350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  position: relative;
+  padding-top: 55px;
+  padding-right: 170px;
+  padding-left: 168px;
+  padding-bottom: 154px;
+  z-index: 50;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* SITENAV-FIRST */
+.sitenav-first{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: inherit;
+  margin-bottom: 0;
+}
+.sitenav-first-logo{
+  width: 120px;
+  height: 33px;
+}
+.sitenav-first-links{
+  width: 265px;
+  margin-left: 46px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.sitenav-first-links-link{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color-grey);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sitenav-first-links-link:hover{
+  color: var(--h1-color);
+}
+.sitenav-first-login{
+  width: 178px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.sitenav-first-login-link{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color-grey);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sitenav-first-login-link:hover{
+  color: var(--h1-color);
+}
+.sitenav-first-login-button{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--background);
+  background: var(--button-color);
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 50px;
+}
+.sitenav-first-login-button:active{
+  opacity: 0.6;
+}
+
+/* SITENAV-SECOND */
+.sitenav-second{
+  height: 480px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+  background-image: url("file:///C:/Users/User/Pictures/Frontend asoschisi-Muhammadjavohir aka/Dars 12(Shortly-landing-page)/img/hero-bg.svg");
+  background-size: 58% 90%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 112%;
+  background-position-y: 100%;
+}
+.sitenav-second-texts{
+  height: 75%;
+  width: 565px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+.sitenav-second-texts-h1{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 90px;
+  color: var(--h1-color);
+  letter-spacing: -2px;
+  margin-top: 0;
+}
+.sitenav-second-texts-p{
+  width: 480px;
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: var(--text-color-grey);
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+.sst-link{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* SITENAV-THIRD */
+.sitenav-third{
+  position: absolute;
+  padding-top: 47px;
+  padding-bottom: 44px;
+  padding-right: 58px;
+  padding-left: 35px;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url("file:///C:/Users/User/Pictures/Frontend asoschisi-Muhammadjavohir aka/Dars 12(Shortly-landing-page)/img/purple-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  z-index: 40;
+}
+.sitenav-third-input{
+  width: 770px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: var(--h1-color);
+  border-radius: 10px;
+  border: none;
+}
+.sitenav-third-button{
+  border: none;
+  border-radius: 8px;
+  margin-left: 25px;
+  width: 180px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--background);
+}
+.sitenav-third-button:active{
+  opacity: 0.8;
+}
+
+/* SITE-MAIN */
+.site-main{
+  width: 1345px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e1e5f7;
+  position: relative;
+  padding-top: 170px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 0;
+  z-index: 15;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 0;
+}
+.site-main-first{
+  max-width: 1140px;
+  background: inherit;
+}
+.site-main-first-h2{
+  text-align: center;
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: var(--h1-color);
+  margin-bottom: 0;
+}
+.site-main-first-p{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.122727px;
+  color: var(--text-color-grey);
+}
+.site-main-first-divs-group{
+  width: 1050px;
+  margin-top: 75px;
+  left: 50%;;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.site-main-first-div{
+  width: 330px;
+  position: relative;
+  background: var(--background);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 42px;
+  border-radius: 5px;
+}
+.site-main-first-div:nth-child(1)::after{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 15px;
+  background: #2bd0d0;
+  right: -50px;
+  top: 150px;
+}
+.site-main-first-div:nth-child(2){
+  margin-top: 75px;
+}
+.site-main-first-div:nth-child(2)::after{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 15px;
+  background: #2bd0d0;
+  right: -50px;
+  top: 125px;
+}
+.site-main-first-div:nth-child(3){
+  margin-top: 150px;
+}
+.site-main-first-div-img{
+  position: absolute;
+  top: -15%;
+  background: #3a3054;
+  padding: 22px;
+  border-radius: 50px;
+}
+.site-main-first-div-h3{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: left;
+  color: var(--h1-color);
+  margin-bottom: 0;
+}
+.site-main-first-div-p{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  color: var(--text-color-grey);
+  margin-bottom: 0;
+}
+
+/* SITE-MAIN-SECOND */
+.site-main-second{
+  width: 1345px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  transform: translateX(-6%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("file://C:/Users/User/Pictures/Frontend asoschisi-Muhammadjavohir aka/Dars 12(Shortly-landing-page)/img/cta-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 120px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-main-second-h2{
+  font-family: "Poppins" , "Arial" , sans-serif;  font-style: normal;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--background);
+  margin-bottom: 0;
+}
+.sms-button{
+  margin-top: 33px;
+}
+
+/* SITE-FOOTER */
+.site-footer{
+  width: 1346px;
+  height: 315px;
+  background: var(--finish-color);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  position: relative;
+}
+.site-footer-div{
+  width: 1112px;
+  height: 166px;
+  display: flex;
+  top: 72px;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 0%;
+}
+.site-footer-div-logo{
+  width: 120px;
+  height: 33px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.site-footer-div-texts{
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  top: -10px;
+  justify-content: space-between;
+  margin-left: 250px;
+  position: absolute;
+}
+.site-footer-div-text-section{
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  width: 30%;
+  top: 0;
+}
+.sfdts-h3{
+  font-family: "Poppins" , "Arial" , sans-serif; font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: var(--background);
+}
+.sfdts-link{
+  font-style: normal;
+  font-family: "Poppins" , "Arial" , sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.25;
+  color: #bfbfbf;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.sfdts-link:hover{
+  color: #2bd0d0;
+}
+.site-footer-icons{
+  width: 160px;
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 80px;
+  right: 100px;
+  top: 10px;
+}
+.site-footer-icons{
+  color: var(--background);
+  font-size: 20px;
+}
+.site-footer-icons i:hover{
+  color: #2bd0d0;
+}
